@@ -1,2 +1,2 @@
-# TextBot
-Text Bot to send iMessages
+# iMessage Bot
+iMessage Bot to send iMessages
