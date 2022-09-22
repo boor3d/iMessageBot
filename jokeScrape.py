@@ -19,7 +19,7 @@ for text in texts:
 
 del pickup_lines[:3]
 del pickup_lines[-3:]
-with open ("PickupLines.txt", "w") as f:
+with open ("PickupLines.txt", "w", encoding='UTF-8') as f:
     pattern = r'[\d.]'
     for line in pickup_lines:
         edit_line = re.sub(pattern, '', line)
