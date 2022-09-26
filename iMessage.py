@@ -9,8 +9,7 @@ time.sleep(3)
 
 keyboard = Controller()
 
-
-with open ("PickupLines.txt", "r") as f:
+with open ("PickupLines.txt", 'r', encoding="UTF-8") as f:
     data = f.readlines()
 
     clean_data = []
@@ -24,9 +23,8 @@ with open ("PickupLines.txt", "r") as f:
 
 
 def typing(phrase):
-    keyboard.type(phrase)
+    keyboard.type(f"Boo_r3d Bot: {phrase}")
     time.sleep(3)
     keyboard.press(Key.enter)
-
 
 typing(random_phrase)
