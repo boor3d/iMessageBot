@@ -16,10 +16,9 @@ for text in texts:
     pickup_lines.append(text.get_text())
 
 
-
 del pickup_lines[:3]
 del pickup_lines[-3:]
-with open ("PickupLines.txt", "w", encoding='UTF-8') as f:
+with open ("PickupLines.txt", "w", encoding='utf-8') as f:
     pattern = r'[\d.]'
     for line in pickup_lines:
         edit_line = re.sub(pattern, '', line)
